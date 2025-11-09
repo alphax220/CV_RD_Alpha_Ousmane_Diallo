@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Diallo Alpha Ousmane</title>
+    <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&family=Arial:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f8f9f0;
+            color: #2d3436;
+            line-height: 1.7;
+            padding: 30px 15px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 45px 60px;
+            box-shadow: 0 8px 25px rgba(45, 106, 79, 0.1);
+            border: 1px solid #e8f5e9;
+            border-radius: 12px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Georgia', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #1b4332;
+            margin-bottom: 25px;
+            text-decoration: underline;
+            text-underline-offset: 6px;
+            text-decoration-color: #2d6a4f;
+            text-decoration-thickness: 2px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 35px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed #a7c957;
+        }
+
+        .personal-details {
+            flex: 1;
+            font-size: 15px;
+        }
+
+        .personal-details p {
+            margin: 5px 0;
+        }
+
+        .photo-container {
+            width: 130px;
+            height: 160px;
+            border: 3px solid #d4af37;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(212, 175, 55, 0.2);
+            background: #fdfdf5;
+            margin-left: 30px;
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-title {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            color: #2d6a4f;
+            margin: 25px 0;
+            font-style: italic;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+            color: #1b4332;
+            margin: 30px 0 18px;
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            text-decoration-color: #2d6a4f;
+            text-decoration-thickness: 1.8px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .entry {
+            margin-bottom: 16px;
+            position: relative;
+            padding-left: 5px;
+        }
+
+        .year {
+            display: inline-block;
+            width: 100px;
+            font-weight: 700;
+            color: #2d6a4f;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            font-size: 15px;
+        }
+
+        .desc {
+            display: inline;
+            font-size: 15px;
+            color: #2d3436;
+        }
+
+        .sub-entry {
+            margin: 10px 0 10px 110px;
+            font-size: 14.8px;
+            color: #2d3436;
+        }
+
+        .sub-entry .year {
+            width: 90px;
+            font-size: 14.5px;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: #1b4332;
+            margin: 18px 0 10px 0;
+            font-size: 15.5px;
+        }
+
+        .lang-item {
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        .lang-item strong {
+            color: #2d6a4f;
+        }
+
+        .interests .entry {
+            margin-bottom: 12px;
+        }
+
+        .controls {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 1000;
+        }
+
+        .controls button {
+            padding: 14px 24px;
+            background: #2d6a4f;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(45, 106, 79, 0.3);
+            transition: all 0.3s;
+        }
+
+        .controls button:hover {
+            background: #1b4332;
+            transform: translateY(-2px);
+        }
+
+        .controls button:nth-child(2) {
+            background: #a7c957;
+        }
+
+        .controls button:nth-child(2):hover {
+            background: #8ab843;
+        }
+
+        .controls button:nth-child(3) {
+            background: #d62828;
+        }
+
+        /* Print */
+        @media print {
+            body, .container { background: white !important; padding: 15px !important; }
+            .container { box-shadow: none !important; border: none !important; }
+            .controls, [contenteditable] { display: none !important; }
+            .photo-container { border: 2px solid #d4af37 !important; }
+        }
+
+        @media (max-width: 768px) {
+            .header { flex-direction: column; text-align: center; }
+            .photo-container { margin: 20px auto 0; }
+            .year, .sub-entry .year { display: block; width: auto; margin-bottom: 4px; }
+            .sub-entry { margin-left: 20px; }
+            .controls { flex-direction: row; top: 10px; right: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>CURRICULUM VITAE</h1>
+
+    <div class="header">
+        <div class="personal-details">
+            <p contenteditable="true"><strong>Diallo Alpha Ousmane</strong></p>
+            <p contenteditable="true">Né le 08/09/92 à Dakar</p>
+            <p contenteditable="true">Sénégalaise Hann-Maristes 2 R150</p>
+            <p contenteditable="true">Dakar-Sénégal</p>
+            <p contenteditable="true">Tél : +221-77-083-86-29</p>
+            <p contenteditable="true">E-mail : fhonx4@gmail.com</p>
+        </div>
+        <div class="photo-container">
+            <img src="mypic.jpg" alt="Photo" id="photo">
+        </div>
+    </div>
+
+    <div class="profile-title" contenteditable="true">
+        Coordonnateur Recherche et Développement Qualité Produit à la SIAGRO/KIRENE
+    </div>
+
+    <div class="section">
+        <h2>EXPERIENCES PROFESSIONNELLES</h2>
+
+        <div class="entry">
+            <span class="year" contenteditable="true">2023 :</span>
+            <span class="desc" contenteditable="true">Coordonnateur Recherche et Développement Qualité Produit à la SIAGRO/KIRENE à ce jour</span>
+        </div>
+
+        <div class="highlight">Projets de Lancement Nouveaux Produits :</div>
+
+        <div class="sub-entry">
+            <span class="year" contenteditable="true">2023 :</span>
+            <span class="desc" contenteditable="true">Boisson Fresh Ananas Coco PET (Format : 330mL)</span>
+        </div>
+        <div class="sub-entry">
+            <span class="year" contenteditable="true">2023 :</span>
+            <span class="desc" contenteditable="true">Boisson Bolé (Format : 1L)</span>
+        </div>
+        <div class="sub-entry">
+            <span class="year" contenteditable="true">2022 :</span>
+            <span class="desc" contenteditable="true">Mini Présséa (Format 200mL)</span>
+        </div>
+        <div class="sub-entry">
+            <span class="year" contenteditable="true">2020 :</span>
+            <span class="desc" contenteditable="true">Lancement Gamme Présséa Fresh Canette (Orange-Mangue-Tropical-Coco-Ananas-Goyave) - 250mL</span>
+        </div>
+        <div class="sub-entry">
+            <span class="year" contenteditable="true">2018 :</span>
+            <span class="desc" contenteditable="true">Lait Fermenté Nature Sucré Soow (500mL et 200mL)</span>
+        </div>
+        <div class="sub-entry">
+            <span class="year" contenteditable="true">2018 :</span>
+            <span class="desc" contenteditable="true">Lancement de la Gamme Pésséa Fresh PET (Tropical/Orange/Mangue Coco)</span>
+        </div>
+        <div class="sub-entry">
+            <span class="year" contenteditable="true">01/02/2017 :</span>
+            <span class="desc" contenteditable="true">Lancement d’un Programme Sensoriel à l’usine SIAGRO/KIRENE</span>
+        </div>
+        <div class="sub-entry">
+            <span class="year" contenteditable="true">21/12/2017 :</span>
+            <span class="desc" contenteditable="true">Pilotage de l’essai industriel de validation du Jus d’Orange et tropical pour L’unité de Cote d’ivoire (AGROCI) en collaboration avec GIOTTI</span>
+        </div>
+        <div class="sub-entry">
+            <span class="year" contenteditable="true">15/08/2017 :</span>
+            <span class="desc" contenteditable="true">Lancement de la 3ème saison de l’unité AGROFRUIT en tant que Superviseur Contrôle qualité produit</span>
+        </div>
+        <div class="sub-entry">
+            <span class="year" contenteditable="true">2016 :</span>
+            <span class="desc" contenteditable="true">CDI Technicien R&D le 18/08/16 à la SIAGRO/Kirène</span>
+        </div>
+        <div class="sub-entry">
+            <span class="year" contenteditable="true">23/06/2016 :</span>
+            <span class="desc" contenteditable="true">Lancement de la 2ème saison de l’unité AGROFRUIT en tant que Assistant Qualité Produit</span>
+        </div>
+        <div class="sub-entry">
+            <span class="year" contenteditable="true">11/08/2015 :</span>
+            <span class="desc" contenteditable="true">Lancement 1er Saison de l’unité AGROFRUIT (Transformation de mangue en purée de Mangue) en tant que Assistant qualité Produit</span>
+        </div>
+        <div class="sub-entry">
+            <span class="year" contenteditable="true">2015 :</span>
+            <span class="desc" contenteditable="true">Stage de trois mois (11/05 au 11/08/15) au Laboratoire Candia (Jus et Lait) de la SIAGRO/Kirène</span>
+        </div>
+        <div class="sub-entry">
+            <span class="year" contenteditable="true">2015 :</span>
+            <span class="desc" contenteditable="true">Stage d’un mois (15 février au 15 Mars) au Laboratoire de chimie et Microbiologie du Commerce Intérieur (L.C.I.)</span>
+        </div>
+        <div class="sub-entry">
+            <span class="year" contenteditable="true">2014 :</span>
+            <span class="desc" contenteditable="true">Stage d’étude d’un mois (1er au 30/04/2014) au Laboratoire de Chimie Alimentaire - ITA<br><em>Sujet : CRITERES DE QUALITE DES HUILES</em></span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>FORMATIONS</h2>
+        <div class="entry">
+            <span class="year" contenteditable="true">2023 :</span>
+            <span class="desc" contenteditable="true">Formation Secourisme (Sapeur Pompiers Thiès)</span>
+        </div>
+        <div class="entry">
+            <span class="year" contenteditable="true">2020-2021 :</span>
+            <span class="desc" contenteditable="true">Gestion Electronique des documents et Système d’archivage : ALFRESCO (Activ-Consult)</span>
+        </div>
+        <div class="entry">
+            <span class="year" contenteditable="true">09/12/2017 :</span>
+            <span class="desc" contenteditable="true">Formation sur la comptabilité d’entreprise (My Solution/MBS)</span>
+        </div>
+        <div class="entry">
+            <span class="year" contenteditable="true">11/11/2017 :</span>
+            <span class="desc" contenteditable="true">Formation sur Business Plan et recherche de financement (MBS)</span>
+        </div>
+        <div class="entry">
+            <span class="year" contenteditable="true">12-13/10/2017 :</span>
+            <span class="desc" contenteditable="true">Séminaire de formation pour la mise en place d’un programme sensoriel à L’Hôtel KYSARA<br><em>Certificat of training Bottler Sensory Leader Program</em></span>
+        </div>
+        <div class="entry">
+            <span class="year" contenteditable="true">2013-2014 :</span>
+            <span class="desc" contenteditable="true">Diplôme Supérieur de Technologie (D.S.T) en Industries Chimiques et Agroalimentaires - ESP Dakar</span>
+        </div>
+        <div class="entry">
+            <span class="year" contenteditable="true">2011-2012 :</span>
+            <span class="desc" contenteditable="true">Baccalauréat série S2 (Lycée des Parcelles Assainies)</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>LANGUES ET INFORMATIQUE</h2>
+        <div class="lang-item" contenteditable="true"><strong>Bureautique :</strong> Microsoft Word-Excel-PowerPoint</div>
+        <div class="lang-item" contenteditable="true"><strong>Français :</strong> outil d’étude et de travail</div>
+        <div class="lang-item" contenteditable="true"><strong>Wolof :</strong> langue maternelle</div>
+        <div class="lang-item" contenteditable="true"><strong>Anglais :</strong> Notions de Base</div>
+    </div>
+
+    <div class="section">
+        <h2>CENTRES D’INTERETS</h2>
+        <div class="entry">
+            <span class="year" contenteditable="true">21/01/2018 :</span>
+            <span class="desc" contenteditable="true">Assisté au séminaire de développement personnel (Comment atteindre ses objectifs) - Cabinet Baraka-Gate</span>
+        </div>
+        <div class="entry">
+            <span class="year" contenteditable="true">02/11/2017 :</span>
+            <span class="desc" contenteditable="true">Assisté au séminaire de développement personnel (Confiance en soi) - Cabinet Baraka-Gate</span>
+        </div>
+        <div class="entry">
+            <span class="year" contenteditable="true">2013 :</span>
+            <span class="desc" contenteditable="true">Trésorier de l’Association Social Les ‘Racines de l’espoir’ à ce jour</span>
+        </div>
+        <div class="entry">
+            <span class="year" contenteditable="true">Divers :</span>
+            <span class="desc" contenteditable="true">Sports, Lecture, Cinéma, Jeux-vidéos</span>
+        </div>
+    </div>
+</div>
+
+<div class="controls">
+    <button onclick="printPDF()">Imprimer PDF</button>
+    <button onclick="downloadPDF()">Télécharger PDF</button>
+    <button onclick="showHelp()">Aide</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+    // Changer photo
+    document.getElementById('photo').addEventListener('click', () => {
+        const input = document.createElement('input');
+        input.type = 'file';
+        input.accept = 'image/*';
+        input.onchange = e => {
+            const file = e.target.files[0];
+            const reader = new FileReader();
+            reader.onload = () => document.getElementById('photo').src = reader.result;
+            reader.readAsDataURL(file);
+        };
+        input.click();
+    });
+
+    function printPDF() { window.print(); }
+
+    function downloadPDF() {
+        const element = document.querySelector('.container');
+        const opt = {
+            margin: [10, 10, 10, 10],
+            filename: 'CV_Diallo_Alpha_Ousmane_R&D.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2, useCORS: true },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        };
+        html2pdf().set(opt).from(element).save();
+    }
+
+    function showHelp() {
+        alert("1. Cliquez sur 'Imprimer PDF' → Enregistrer en PDF\n2. Ou 'Télécharger PDF'\nLa méthode impression est la plus fidèle !");
+    }
+</script>
+
+</body>
+</html>
