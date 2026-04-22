@@ -63,11 +63,15 @@ h1 {
     border-radius: 10px;
     overflow: hidden;
     border: 2px solid #d4af37;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .photo-container img {
-    width: 100%;
+    width: auto;
     height: 100%;
+    max-width: 100%;
     object-fit: cover;
 }
 
@@ -214,6 +218,15 @@ h2 {
 }
 
 .section {
+    page-break-inside: auto;
+}
+
+h2 {
+    page-break-after: avoid;
+}
+
+.entry,
+.sub-entry {
     page-break-inside: avoid;
 }
 
@@ -225,6 +238,10 @@ h2 {
 .container {
     width: 210mm;
     max-width: 100%;
+}
+
+.section:nth-of-type(3) {
+    page-break-before: always;
 }
 </style>
 </head>
